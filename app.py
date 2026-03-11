@@ -32,7 +32,7 @@ for i in range(1, 13):
             st.error(f"9.mp4 dosyası bulunamadı!")
     else:
         # Diğer dosyalar JPEG
-        foto_dosyasi = f"{medya_yolu}{i}.jpg"
+        foto_dosyasi = f"{medya_yolu}{i}.jpeg"
         try:
             st.image(foto_dosyasi, use_container_width=True, caption=f"Anı #{i}")
         except:
@@ -45,4 +45,5 @@ st.success("Daha nice güzel anılar biriktirmek dileğiyle!")
 st.snow() # Sayfanın sonuna bir sürpriz daha ekleyelim
 
 if st.button("Buraya Tıkla! 📩"):
+
     st.info("Senin gibi bir dostun varlığı, en büyük başarı katsayısıdır. İyi ki varsın!")
